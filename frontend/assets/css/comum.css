@@ -1,0 +1,86 @@
+/* Usado em todas as telas */
+
+/* mensagens */
+.mensagem {
+    margin: 0 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #73736f;
+}
+
+.mensagem:empty {
+    display: none;
+}
+
+.mensagem.erro {
+    color: #c2410c;
+}
+
+.mensagem.sucesso {
+    color: #167a4a;
+}
+
+/* diagnóstico */
+form > .mensagem {
+    grid-column: 1 / -1;
+}
+
+/* Tema escuro */
+body.dark {
+    --bg: #121211;
+    --surface: #1d1d1b;
+    --surface-2: #262623;
+    --text: #f1f1ee;
+    --muted: #a8a8a3;
+    --line: #34342f;
+    --orange-soft: #3a2413;
+    --green-soft: #13301f;
+    --shadow: none;
+
+    --fundo: #121211;
+    --branco: #1d1d1b;
+    --texto: #f1f1ee;
+    --texto-suave: #a8a8a3;
+    --borda: #34342f;
+    --laranja-claro: #3a2413;
+    --verde-claro: #13301f;
+    --chip: #2a2a27;
+    --sombra: none;
+}
+
+/* ajustes do tema escuro */
+body.dark .course-meta span {
+    background: #2a2a27;
+}
+
+body.dark .course-deadline.is-open,
+body.dark .course-na-trilha,
+body.dark .mensagem.sucesso,
+body.dark .vaga-completa {
+    color: #5fbf87;
+}
+
+body.dark nav a,
+body.dark header > button {
+    color: #c9c9c4;
+}
+
+body.dark nav a[aria-current="page"] {
+    background: #3a2413;
+    color: #ff8a3d;
+}
+
+body.dark main > section:nth-of-type(3) > a,
+body.dark main > ul > li.concluido::before,
+body.dark header > button:last-of-type {
+    color: #fff;
+}
+
+body.dark header > button:last-of-type {
+    background: #ff6b0b;
+    border-color: #ff6b0b;
+}
+
+body.dark .mensagem.erro {
+    color: #ff8a5c;
+}

@@ -1,0 +1,184 @@
+:root {
+    --bg: #f5f5f2;
+    --surface: #ffffff;
+    --surface-2: #f0f0ed;
+    --text: #161616;
+    --muted: #696965;
+    --line: #deded8;
+    --orange: #f97316;
+    --orange-dark: #dc5d08;
+    --orange-soft: #fff0e5;
+    --green: #167a4a;
+    --green-soft: #e5f5ec;
+    --shadow: 0 12px 40px rgba(22, 22, 22, 0.07);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 24px;
+    background:
+        radial-gradient(circle at 15% 0%, var(--orange-soft), transparent 28%),
+        var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 0;
+}
+
+header a {
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background-color: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    max-width: 412px;
+    margin: auto;
+    padding: 30px 20px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background-color: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+main > p:first-child {
+    margin: 0 0 14px;
+    color: var(--orange-dark);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.15;
+}
+
+h1 + p {
+    margin: 12px 0 26px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background-color: var(--surface);
+    color: var(--text);
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid var(--orange);
+    border-color: var(--orange);
+}
+
+form a {
+    display: inline-block;
+    margin: 4px 0 20px;
+    color: var(--orange-dark);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+form button,
+main > a {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form button {
+    border: 0;
+    background-color: var(--orange);
+    color: white;
+}
+
+form button:hover {
+    background-color: var(--orange-dark);
+}
+
+main > a {
+    margin-top: 10px;
+    border: 1px solid var(--line);
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+main > p:last-child {
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+main > p:last-child::before {
+    content: "✓";
+    margin-right: 8px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 16px;
+    }
+
+    main {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}

@@ -1,0 +1,196 @@
+/* Tela Vagas */
+
+/* filtros */
+main > form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+main > form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+main > form label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+main > form select {
+    min-width: 220px;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background: var(--branco);
+    color: var(--texto);
+    font: inherit;
+    font-size: 14px;
+}
+
+main > form select:focus {
+    outline: 2px solid var(--laranja);
+    border-color: var(--laranja);
+}
+
+main section > h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+}
+
+#lista-vagas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* card da vaga */
+.vaga-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    background: var(--branco);
+    box-shadow: var(--sombra);
+}
+
+.vaga-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.vaga-topo p {
+    margin: 0;
+}
+
+.vaga-empresa {
+    color: var(--texto-suave);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.vaga-aderencia {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--laranja-claro);
+    color: var(--laranja-escuro);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.vaga-card h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.vaga-barra {
+    height: 6px;
+    border-radius: 999px;
+    background: var(--chip);
+    overflow: hidden;
+}
+
+.vaga-barra span {
+    display: block;
+    height: 100%;
+    background: var(--laranja);
+}
+
+.vaga-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vaga-info li {
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: var(--chip);
+    color: var(--texto-suave);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.vaga-card h4 {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
+.vaga-falta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vaga-falta li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 6px;
+    background: var(--fundo);
+    font-size: 14px;
+}
+
+.vaga-falta a {
+    color: var(--laranja-escuro);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.vaga-falta a:hover {
+    text-decoration: underline;
+}
+
+.vaga-completa {
+    margin: 6px 0 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: var(--verde-claro);
+    color: var(--verde);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.vaga-botao {
+    margin-top: auto;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--laranja);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vaga-botao:hover {
+    background: var(--laranja-escuro);
+}
+
+@media (max-width: 900px) {
+    #lista-vagas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    main > form div,
+    main > form select {
+        width: 100%;
+    }
+}

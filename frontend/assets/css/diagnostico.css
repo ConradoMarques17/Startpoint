@@ -1,0 +1,282 @@
+:root {
+    --bg: #f5f5f2;
+    --surface: #ffffff;
+    --text: #161616;
+    --muted: #696965;
+    --line: #deded8;
+    --orange: #f97316;
+    --orange-dark: #dc5d08;
+    --orange-soft: #fff0e5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 24px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+header,
+.progress,
+main {
+    width: 100%;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+}
+
+header a {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.progress {
+    height: 4px;
+    border-radius: 999px;
+    background: var(--line);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: var(--orange);
+}
+
+.progress-fill--um {
+    width: 25%;
+}
+
+.progress-fill--dois {
+    width: 50%;
+}
+
+.progress-fill--tres {
+    width: 75%;
+}
+
+.progress-fill--quatro {
+    width: 100%;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+main {
+    max-width: 500px;
+    padding-top: 28px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+h1 + p {
+    margin: 8px 0 24px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+}
+
+form > div {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+}
+
+form > div:has(input:checked) {
+    border-color: var(--orange);
+    background: var(--orange-soft);
+}
+
+form label {
+    order: 1;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+
+form > a {
+    margin-top: 18px;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+form > a:first-of-type {
+    grid-column: 1;
+    color: var(--text);
+    background: var(--surface);
+}
+
+form > a:last-of-type {
+    grid-column: 3;
+    border-color: var(--orange);
+    background: var(--orange);
+    color: white;
+}
+
+form > a:last-of-type:hover {
+    background: var(--orange-dark);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+
+main.diagnostico-cidades {   /*diagnostico 3*/
+    width: 100%;
+    max-width: 750px;
+    padding-top: clamp(24px, 4vw, 36px);
+}
+
+.diagnostico-cidades .eyebrow {
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+.diagnostico-cidades h1 {
+    font-size: clamp(28px, 4vw, 36px);
+}
+
+.diagnostico-cidades h1 + p {
+    margin-bottom: clamp(20px, 3vw, 28px);
+    font-size: clamp(16px, 2.5vw, 20px);
+}
+
+.diagnostico-cidades .city-list {
+    width: 100%;
+    min-width: 0;
+    max-height: min(42vh, 340px);
+    margin: 0 0 24px;
+    padding: 0 8px 0 0;
+    overflow-y: auto;
+    border: 0;
+}
+
+.diagnostico-cidades .city-list legend {
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.diagnostico-cidades .city-option {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 2vw, 14px);
+    width: 100%;
+    min-height: clamp(56px, 8vh, 72px);
+    margin-bottom: 10px;
+    padding: clamp(12px, 2vw, 20px);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+    cursor: pointer;
+}
+
+.diagnostico-cidades .city-option:has(input:checked) {
+    border-color: var(--orange);
+    background: var(--orange-soft);
+}
+
+.diagnostico-cidades .city-option input[type="radio"] {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+
+.diagnostico-cidades .city-option span {
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 700;
+}
+
+.diagnostico-cidades .city-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.diagnostico-cidades .city-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: clamp(112px, 17vw, 130px);
+    min-height: clamp(48px, 7vh, 58px);
+    padding: clamp(10px, 2vw, 14px) clamp(16px, 3vw, 24px);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.diagnostico-cidades .city-actions a:first-child {
+    color: var(--text);
+    background: var(--surface);
+}
+
+.diagnostico-cidades .city-actions a:last-child {
+    border-color: var(--orange);
+    color: white;
+    background: var(--orange);
+}

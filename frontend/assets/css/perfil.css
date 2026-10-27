@@ -1,0 +1,120 @@
+/* Tela Perfil */
+
+main > section {
+    max-width: 640px;
+}
+
+main article {
+    padding: 28px;
+    border: 1px solid var(--borda);
+    border-radius: 24px;
+    background: var(--branco);
+    box-shadow: var(--sombra);
+}
+
+/* topo do card */
+main article header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    border: 0;
+}
+
+#iniciais-usuario {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    border-radius: 50%;
+    background: var(--laranja-claro);
+    color: var(--laranja-escuro);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+main article h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+#email-perfil {
+    margin: 2px 0 0;
+    color: var(--texto-suave);
+}
+
+main article hr {
+    margin: 22px 0;
+    border: 0;
+    border-top: 1px solid var(--borda);
+}
+
+dl {
+    display: grid;
+    gap: 14px;
+    margin: 0 0 24px;
+}
+
+dl div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+dt {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+dd {
+    margin: 0;
+    font-weight: 700;
+    text-align: right;
+}
+
+#btn-editar {
+    width: 100%;
+    min-height: 48px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--laranja);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#btn-editar:hover {
+    background: var(--laranja-escuro);
+}
+
+main article > p {
+    margin: 12px 0 0;
+    color: var(--texto-suave);
+    font-size: 13px;
+    text-align: center;
+}
+
+main > p:last-child a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #c2410c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    main article {
+        padding: 22px;
+    }
+
+    dl div {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    dd {
+        text-align: left;
+    }
+}
