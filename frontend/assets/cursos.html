@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpoint | Cursos</title>
+    <meta name="description" content="Encontre cursos gratuitos para desenvolver
+     suas habilidades e se preparar para o mercado de trabalho.">
+     <link rel="stylesheet" href="assets/css/cursos.css">
+     <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+
+<body>
+    <header>
+        <a href="inicio.html">startpoint</a>
+        <button type="button">Notificações</button>
+        <button type="button" data-ir="perfil.html">Perfil</button>
+    </header>
+
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="trilha.html">Trilha</a></li>
+                <li><a href="cursos.html" aria-current="page">Cursos</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><button type="button" id="btn-tema">Alterar tema</button></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <p>CURSOS GRATUITOS</p>
+            <h1>Aprenda no seu ritmo</h1>
+            <p>Conteúdos confiáveis para fortalecer seu perfil.</p>
+
+            <p id="mensagem" class="mensagem"></p>
+
+            <div id="lista-cursos"></div>
+        </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/modelos.js"></script>
+    <script src="assets/js/cursos.js"></script>
+</body>
+</html>

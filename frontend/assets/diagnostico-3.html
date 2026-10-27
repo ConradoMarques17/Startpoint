@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Startpoint | Diagnóstico — Etapa 3</title>
+    <meta name="description" content="Escolha sua cidade para encontrar cursos e vagas perto de você.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/diagnostico.css">
+    <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+
+<body data-etapa="3">
+    <header>
+        <a href="login.html">startpoint</a>
+        <p>Etapa 3 de 4</p>
+    </header>
+
+    <div class="progress">
+         <div class="progress-fill progress-fill--tres"></div>
+    </div>
+    
+    <main class="diagnostico-cidades">
+        <p class="eyebrow">03</p>
+
+        <h1>Onde você está?</h1>
+        <p>Por enquanto o Startpoint atende a cidade de São Paulo.</p>
+
+       
+        <fieldset class="city-list">
+            <legend>Escolha sua cidade</legend>
+            <label class="city-option">
+                <input type="radio" name="cidade" value="São Paulo/SP" checked>
+                <span>São Paulo/SP</span>
+            </label>
+        </fieldset> 
+
+        <p id="mensagem" class="mensagem"></p>
+
+        <div class="city-actions">
+            <a href="diagnostico-2.html" id="btn-voltar">Voltar</a>
+            <a href="diagnostico-4.html" id="btn-continuar">Continuar →</a>
+        </div>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/diagnostico.js"></script>
+</body>
+</html>

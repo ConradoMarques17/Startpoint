@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Startpoint | Início</title>
+    <meta name="description" content="Acompanhe sua trilha de cursos e oportunidades na Startpoint.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+<body>
+    <header>
+        <a href="inicio.html">startpoint</a>
+        <button type="button" id="btn-tema">Alterar tema</button>
+        <button type="button">Notificações</button>
+        <button type="button" data-ir="perfil.html">Perfil</button>
+    </header>
+
+       <nav>
+            <ul>
+                <li><a href="inicio.html" aria-current="page">Início</a></li>
+                <li><a href="trilha.html">Trilha</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <p id="data-hoje"></p>
+
+                <h1 id="saudacao">Olá! Vamos avançar?</h1>
+
+                <p>Um passo de cada vez até sua primeira oportunidade.</p>
+            </section>
+            <section id="resumo-trilha">
+                <p>MINHA TRILHA</p>
+
+                    <h2 id="titulo-trilha">Carregando sua trilha...</h2>
+
+                    <p id="percentual">0%</p>
+                    <p id="cursos-concluidos">0 de 0 cursos concluídos</p>
+                    <p id="aderencia">0% de aderência às vagas</p>
+
+                    <a href="trilha.html">Ver trilha completa →</a>
+
+            </section>
+            <section>
+                <p>PRÓXIMA AÇÃO</p>
+
+                <h2 id="proximo-nome">-</h2>
+
+                <p id="proximo-info"></p>
+
+                <a href="trilha.html" id="proximo-link">Continuar curso →</a>
+            </section>
+            <section>
+                <p>PREPARE-SE</p>
+
+                <h2>Antes de se candidatar</h2>
+
+                <p>Checklist de contratação — 2 de 5 documentos separados</p>
+
+            </section>
+
+        </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/inicio.js"></script>
+</body>
+</html>

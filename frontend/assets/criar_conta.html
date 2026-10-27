@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpoint | Criar conta</title>
+    <meta name="description" content="Crie sua conta na Startpoint.">
+	<link rel="stylesheet" href="assets/css/cadastro.css">
+	<link rel="stylesheet" href="assets/css/comum.css">
+</head>
+<body>
+    <header>
+        <a href="login.html">startpoint</a>
+	    <button type="button" id="btn-tema" aria-label="Alterar tema">☾</button>
+    </header>
+
+    <main>
+
+       <p>SEU PRIMEIRO PASSO</p>
+        <h1>Crie sua conta.</h1>
+        <p>Você está começando sua jornada para conquistar a primeira oportunidade.</p>
+
+        <form id="form-cadastro">
+            <div>
+                <label for="name">Nome completo</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="nome"
+                    placeholder="Como você quer ser chamado?"
+                    required>
+            </div>
+
+             <div>
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="voce@email.com"
+                    required>
+            </div>
+
+            <div>
+                <label for="password">Senha</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="senha"
+                    placeholder="Crie uma senha"
+                    required>
+                <small>Mínimo de 6 caracteres.</small>
+            </div>
+
+            <div>
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input
+                    type="password"
+                    id="confirmar-senha"
+                    name="confirmar-senha"
+                    placeholder="Digite a senha novamente"
+                    required>
+            </div>
+
+            <p id="mensagem" class="mensagem"></p>
+
+            <button type="submit">Criar conta →</button>
+
+        </form>
+
+        <a href="login.html">Já tenho uma conta</a>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre vagas e oportunidades profissionais para começar sua carreira.">
+    <title>Startpoint | Vagas</title>
+    <link rel="stylesheet" href="assets/css/painel.css">
+    <link rel="stylesheet" href="assets/css/vagas.css">
+    <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+
+<body>
+    <header>
+        <a href="inicio.html">startpoint</a>
+        <button type="button" id="btn-tema">Alterar tema</button>
+        <button type="button">Notificações</button>
+        <button type="button" data-ir="perfil.html">Perfil</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="trilha.html">Trilha</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="vagas.html" aria-current="page">Vagas</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>VAGAS PARA VOCÊ</p>
+        <h1>Sua primeira oportunidade</h1>
+        <p>Veja o quanto seu perfil combina e o que falta aprender.</p>
+
+        <form id="form-filtros">
+            <div>
+                <label for="localizacao">Localização</label>
+                <select id="localizacao" name="localizacao">
+                    <option value="">Todas as localidades</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="area">Área profissional</label>
+                <select id="area" name="area">
+                    <option value="">Todas as áreas</option>
+                </select>
+            </div>
+        </form>
+
+        <section>
+            <h2>Vagas encontradas</h2>
+
+            <p id="mensagem" class="mensagem"></p>
+
+            <div id="lista-vagas"></div>
+        </section>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/modelos.js"></script>
+    <script src="assets/js/vagas.js"></script>
+</body>
+</html>

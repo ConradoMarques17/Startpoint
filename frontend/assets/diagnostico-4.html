@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Startpoint | Diagnóstico — Etapa 4</title>
+    <meta name="description" content="Escolha uma área de interesse para personalizar sua trilha na Startpoint.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/diagnostico.css">
+    <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+
+<body data-etapa="4">
+    <header>
+        <a href="login.html">startpoint</a>
+        <p>Etapa 4 de 4</p>
+    </header>
+
+    <div class="progress">
+        <div class="progress-fill progress-fill--quatro"></div>
+    </div>
+
+    <main>
+        <p class="eyebrow">04</p>
+
+        <h1>Qual área combina com você?</h1>
+        <p>Você poderá mudar esta escolha depois.</p>
+
+        <form>
+            <div>
+                <label for="administrativo">Administrativo</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="administrativo"
+                    value="Administrativo"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="tecnologia">Tecnologia</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="tecnologia"
+                    value="Tecnologia"
+                >
+            </div>
+
+            <div>
+                <label for="varejo">Varejo</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="varejo"
+                    value="Varejo"
+                >
+            </div>
+
+            <div>
+                <label for="logistica">Logística</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="logistica"
+                    value="Logística"
+                >
+            </div>
+
+            <div>
+                <label for="atendimento-cliente">Atendimento ao Cliente</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="atendimento-cliente"
+                    value="Atendimento ao Cliente"
+                >
+            </div>
+
+            <div>
+                <label for="servicos-financeiros">Serviços Financeiros</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="servicos-financeiros"
+                    value="Serviços Financeiros"
+                >
+            </div>
+
+            <div>
+                <label for="saude">Saúde</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="saude"
+                    value="Saúde"
+                >
+            </div>
+
+            <div>
+                <label for="industria">Indústria</label>
+                <input
+                    type="radio"
+                    name="area"
+                    id="industria"
+                    value="Indústria"
+                >
+            </div>
+
+            <p id="mensagem" class="mensagem"></p>
+
+            <a href="diagnostico-3.html" id="btn-voltar">Voltar</a>
+            <a href="inicio.html" id="btn-continuar">Gerar minha trilha →</a>
+        </form>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/diagnostico.js"></script>
+</body>
+</html>

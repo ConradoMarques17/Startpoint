@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Startpoint | Diagnóstico — Etapa 2</title>
+    <meta name="description" content="Conte o que você já aprendeu para personalizar sua trilha na Startpoint.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/diagnostico.css">
+    <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+
+<body data-etapa="2">
+    <header>
+        <a href="login.html">startpoint</a>
+        <p>Etapa 2 de 4</p>
+    </header>
+
+        <div class="progress">
+            <div class="progress-fill progress-fill--dois"></div>
+        </div>
+    
+    <main>
+        <p class="eyebrow">02</p>
+
+        <h1>O que você já aprendeu?</h1>
+        <p>Pode marcar mais de uma opção.</p>
+
+        <form>
+            <div>
+                <label for="informatica-basica">Informática básica</label>
+                <input
+                    type="checkbox"
+                    name="aprendidos"
+                    id="informatica-basica"
+                    value="Informática básica"
+                >
+            </div>
+
+            <div>
+                <label for="pacote-office">Pacote Office</label>
+                <input
+                    type="checkbox"
+                    name="aprendidos"
+                    id="pacote-office"
+                    value="Pacote Office"
+                >
+            </div>
+
+            <div>
+                <label for="atendimento-cliente">Atendimento ao cliente</label>
+                <input
+                    type="checkbox"
+                    name="aprendidos"
+                    id="atendimento-cliente"
+                    value="Atendimento ao cliente"
+                >
+            </div>
+
+            <div>
+                <label for="nenhum-ainda">Nenhum ainda</label>
+                <input
+                    type="checkbox"
+                    name="aprendidos"
+                    id="nenhum-ainda"
+                    value="nenhum"
+                >
+            </div>
+
+            <p id="mensagem" class="mensagem"></p>
+
+            <a href="diagnostico-1.html" id="btn-voltar">Voltar</a>
+            <a href="diagnostico-3.html" id="btn-continuar">Continuar →</a>
+        </form>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/diagnostico.js"></script>
+</body>
+</html>

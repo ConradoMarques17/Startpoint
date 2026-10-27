@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulte seu perfil e suas informações no StartPoint.">
+    <title>Startpoint | Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/painel.css">
+    <link rel="stylesheet" href="assets/css/perfil.css">
+    <link rel="stylesheet" href="assets/css/comum.css">
+</head>
+
+<body>
+    <header>
+        <a href="inicio.html">startpoint</a>
+        <button type="button" id="btn-tema">Alterar tema</button>
+        <button type="button">Notificações</button>
+        <button type="button" data-ir="perfil.html">Perfil</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="trilha.html">Trilha</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="vagas.html">Vagas</a></li>
+            <li><a href="perfil.html" aria-current="page">Perfil</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>MEU PERFIL</p>
+        <h1>Olá, <span id="nome-usuario">Visitante</span></h1>
+        <p>Essas respostas personalizam sua trilha e suas vagas.</p>
+
+        <section>
+            <article>
+                <header>
+                    <div>
+                        <p id="iniciais-usuario">US</p>
+                    </div>
+
+                    <div>
+                        <h2 id="nome-perfil">Nome do usuário</h2>
+                        <p id="email-perfil">E-mail não informado</p>
+                    </div>
+                </header>
+                <hr>
+
+                <dl>
+                    <div>
+                        <dt>Escolaridade</dt>
+                        <dd id="escolaridade-usuario">Não informado</dd>
+                    </div>
+
+                    <div>
+                        <dt>Região</dt>
+                        <dd id="regiao-usuario">Não informada</dd>
+                    </div>
+
+                    <div>
+                        <dt>Área de interesse</dt>
+                        <dd id="area-usuario">Não informada</dd>
+                    </div>
+
+                    <div>
+                        <dt>Cursos anteriores</dt>
+                        <dd id="cursos-anteriores">Não informado</dd>
+                    </div>
+
+                    <div>
+                        <dt>Cursos concluídos</dt>
+                        <dd id="cursos-concluidos">0 cursos</dd>
+                    </div>
+                </dl>
+
+                <button type="button" id="btn-editar">Editar diagnóstico</button>
+
+                <p>
+                    Ao editar suas respostas, sua trilha e a aderência
+                    às vagas serão recalculadas.
+                </p>
+            </article>
+        </section>
+
+        <p id="mensagem" class="mensagem"></p>
+
+        <p>
+            <a href="login.html" data-sair>Sair da conta</a>
+        </p>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/comum.js"></script>
+    <script src="assets/js/perfil.js"></script>
+</body>
+</html>
